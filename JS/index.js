@@ -27,5 +27,4 @@ if (age < 18 ) {
 }
 
 prezzo = prezzo - sconto;
-console.log(prezzo);
 document.getElementById("prezzo").innerHTML=prezzo.toFixed(2);
