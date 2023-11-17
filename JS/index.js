@@ -8,22 +8,27 @@
 
 // chiedere all'utente i chilometri da percorrere e la sua età 
 const lungezzaTragitto = parseInt(prompt("quanti chiloetri vuoi percorrere"));
-console.log(lungezzaTragitto);
+// console.log(lungezzaTragitto);
 
 const age= parseInt(prompt("quanti anni hai "));
-console.log(age);
+// console.log(age);
+
 // calcolare prezzo biglietto
-let prezzo = lungezzaTragitto * 0.21;
-console.log(prezzo);
+ let prezzo = lungezzaTragitto * 0.21;
+// console.log(prezzo);
+
 // applicare sconto under18 e over 65 
 if (age < 18 ) {
    let scontoUnder18 = (prezzo / 100 ) * 20
-   let prezzoUnder18 = prezzo -scontoUnder18;
-   console.log(prezzoUnder18);
+   var prezzoUnder18 = prezzo -scontoUnder18;
+//    console.log(prezzoUnder18);
+   document.getElementById("prezzo").innerHTML=prezzoUnder18.toFixed(2);
 } else if(age > 65 ) {
     let scontoOver65= ((prezzo / 100 ) * 40);
     let prezzoover65= prezzo - scontoOver65;
-    console.log(prezzoover65);
+    // console.log(prezzoover65);
+    document.getElementById("prezzo").innerHTML=prezzoover65.toFixed(2);
+} else {
+    document.getElementById("prezzo").innerHTML=prezzo.toFixed(2);
+    // console.log(prezzo);
 }
-
-// scrivere output prezzo in decimale 
