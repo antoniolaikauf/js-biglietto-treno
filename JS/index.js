@@ -8,10 +8,10 @@
 
 // chiedere all'utente i chilometri da percorrere e la sua età 
 const lungezzaTragitto = parseInt(prompt("quanti chiloetri vuoi percorrere"));
-// console.log(lungezzaTragitto);
+console.log(lungezzaTragitto);
 
 const age= parseInt(prompt("quanti anni hai "));
-// console.log(age);
+console.log(age);
 // calcolare prezzo 
 let prezzo= lungezzaTragitto * 0.21;
 let sconto;
