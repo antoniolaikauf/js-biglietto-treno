@@ -17,17 +17,15 @@ let prezzo= lungezzaTragitto * 0.21;
 let sconto;
 // calcolare prezzo con sconto 
 if (age < 18 ) {
-    sconto = ((prezzo / 100) * 20)
-    prezzo = prezzo - sconto;
+    sconto = ((prezzo / 100) * 20);
     console.log(prezzo);
-    document.getElementById("prezzo").innerHTML=prezzo.toFixed(2)
 } else if(age > 65 ) {
     sconto = ((prezzo / 100) * 40);
-    prezzo = prezzo - sconto;
     console.log(prezzo);
-    document.getElementById("prezzo").innerHTML=prezzo.toFixed(2);
 }else {
-    document.getElementById("prezzo").innerHTML=prezzo.toFixed(2);
+    sconto = 0 ;
 }
 
-
+prezzo = prezzo - sconto;
+console.log(prezzo);
+document.getElementById("prezzo").innerHTML=prezzo.toFixed(2);
