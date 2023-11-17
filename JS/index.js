@@ -18,13 +18,12 @@ let sconto;
 // calcolare prezzo con sconto 
 if (age < 18 ) {
     sconto = ((prezzo / 100) * 20);
-    console.log(prezzo);
 } else if(age > 65 ) {
     sconto = ((prezzo / 100) * 40);
-    console.log(prezzo);
 }else {
     sconto = 0 ;
 }
 
 prezzo = prezzo - sconto;
+console.log(prezzo);
 document.getElementById("prezzo").innerHTML=prezzo.toFixed(2);
