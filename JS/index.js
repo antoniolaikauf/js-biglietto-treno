@@ -7,7 +7,7 @@
 // Questo richiederà un minimo di ricerca.
 
 // chiedere all'utente i chilometri da percorrere e la sua età 
-const lungezzaTragitto = parseInt(prompt("quanti chiloetri vuoi percorrere"));
+const lungezzaTragitto = parseInt(prompt("quanti chilometri vuoi percorrere"));
 console.log(lungezzaTragitto);
 
 const age= parseInt(prompt("quanti anni hai "));
