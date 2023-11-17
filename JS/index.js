@@ -7,12 +7,23 @@
 // Questo richiederà un minimo di ricerca.
 
 // chiedere all'utente i chilometri da percorrere e la sua età 
-let lungezzaTragitto = parseInt(prompt("quanti chiloetri vuoi percorrere"));
+const lungezzaTragitto = parseInt(prompt("quanti chiloetri vuoi percorrere"));
 console.log(lungezzaTragitto);
 
-let age= parseInt(prompt("quanti anni hai "));
+const age= parseInt(prompt("quanti anni hai "));
 console.log(age);
 // calcolare prezzo biglietto
-
+let prezzo = lungezzaTragitto * 0.21;
+console.log(prezzo);
 // applicare sconto under18 e over 65 
+if (age < 18 ) {
+   let scontoUnder18 = (prezzo / 100 ) * 20
+   let prezzoUnder18 = prezzo -scontoUnder18;
+   console.log(prezzoUnder18);
+} else if(age > 65 ) {
+    let scontoOver65= ((prezzo / 100 ) * 40);
+    let prezzoover65= prezzo - scontoOver65;
+    console.log(prezzoover65);
+}
+
 // scrivere output prezzo in decimale 
